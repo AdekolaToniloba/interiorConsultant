@@ -29,13 +29,17 @@
           <button class="btn">This Interior</button>
         </div>
 
-        <nav>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Collection</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+        <nav id="mynavs">
+          <ul class="menu">
+            <li><a class="menuItem" href="#">Home</a></li>
+            <li><a class="menuItem" href="#">Collection</a></li>
+            <li><a class="menuItem" href="#">About</a></li>
+            <li><a class="menuItem" href="#">Contact</a></li>
           </ul>
+          <button class="hamburger">
+          <i class="menuIcon fa fa-bars"></i>
+          <i class=" closeIcon fas fa-times"></i>
+        </button>
         </nav>
       </div>
 
@@ -68,5 +72,28 @@
       <p>created by <a href="https://github.com/adekolatoniloba">@AdekolaToniloba</a>-DevChallenges.io</p>
     </footer>
   </div>
+
+  <script>
+    const menu = document.querySelector(".menu");
+const menuItems = document.querySelectorAll(".menuItem");
+const hamburger= document.querySelector(".hamburger");
+const closeIcon= document.querySelector(".close-icon");
+const menuIcon = document.querySelector(".menu-icon");
+
+function toggleMenu() {
+  if (menu.classList.contains("showMenu")) {
+    menu.classList.remove("showMenu");
+    closeIcon.style.display = "none";
+    menuIcon.style.display = "block";
+  } else {
+    menu.classList.add("showMenu");
+    closeIcon.style.display = "block";
+    menuIcon.style.display = "none";
+  }
+}
+
+hamburger.addEventListener("click", toggleMenu);
+
+  </script>
   </body>
 </html>
