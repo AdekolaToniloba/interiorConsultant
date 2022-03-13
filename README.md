@@ -41,7 +41,7 @@
 Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
 
 - Where can I see your demo? => [here](https://intconsult.netlify.app/)
-- What was your experience? => It was a good experience, I had to do a little research for the hamburger menu and the nth-child as well as integrating vanilla javascript into the html and css, but they turned out fine.
+- What was your experience? => It was a good experience, I had to do a little research for the hamburger menu as well as integrating vanilla javascript into the html and css, but they turned out fine.
 - Your wisdom? :) Use Google 😏
 
 ### Built With
